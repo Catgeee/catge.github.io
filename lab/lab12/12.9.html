@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab12.9</title>
+  </head>
+  <body>
+    <script>
+      function celsius(a) {
+        var c = (5 / 9) * (a - 32);
+
+        return c;
+      }
+      function fahrenheit(b) {
+        var d = (9 / 5) * b + 32;
+        return d;
+      }
+      var f = prompt("Dulaanii hemjee: ");
+      var t = prompt("Celsius bol 1, Fahrenheit bol 2-iig darna uu.");
+      if (t == 1) document.writeln(celsius(f));
+      else document.writeln(fahrenheit(f));
+    </script>
+  </body>
+</html>

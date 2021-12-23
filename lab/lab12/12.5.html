@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab12.5</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = prompt("a: ");
+      var b = prompt("b: ");
+      document.writeln(integerPower(a, b));
+      function integerPower(base, exponent) {
+        var x = base;
+        for (var i = 2; i <= exponent; i++) base *= x;
+        return base;
+      }
+    </script>
+  </body>
+</html>

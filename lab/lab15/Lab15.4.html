@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <p>1st Number <input type="number" name="text" id="input" /></p>
+    <p>2nd Number <input type="number" name="text" id="input1" /></p>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <p id="insert">Multiply result:</p>
+    <p id="insert1">Divide result:</p>
+    <script type="text/javascript">
+      var a, b, n;
+      function multiply() {
+        a = document.getElementById("input").value;
+        b = document.getElementById("input1").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        n = a * b;
+        document.getElementById("insert").innerHTML += n;
+      }
+      function divide() {
+        a = document.getElementById("input").value;
+        b = document.getElementById("input1").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        n = a / b;
+        document.getElementById("insert1").innerHTML += n;
+      }
+    </script>
+  </body>
+</html>

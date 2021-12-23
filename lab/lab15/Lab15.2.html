@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="qwer">Hello world</p>
+    <input type="number" name="text" id="size" />
+    <button onclick="IncreaseSize()">Insert</button>
+    <script>
+      var a;
+      var b;
+      function IncreaseSize() {
+        a = document.getElementById("size").value;
+        b = parseInt(a);
+        document
+          .getElementById("qwer")
+          .setAttribute("style", "font-size : " + b + "px");
+      }
+    </script>
+  </body>
+</html>

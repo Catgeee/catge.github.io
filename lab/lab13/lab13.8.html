@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <table id="table">
+      <tbody>
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script type="text/javascript">
+      function ready() {
+        var table, row;
+        var a = [];
+        row = document.querySelector("#table > tbody tr");
+        for (var i = 0; i < 36; i++) {
+          a[i] =
+            Math.floor(Math.random() * 6) +
+            1 +
+            (Math.floor(Math.random() * 6) + 1);
+          row.innerHTML += "<td>" + a[i] + "</td>";
+        }
+      }
+      ready();
+    </script>
+  </body>
+</html>

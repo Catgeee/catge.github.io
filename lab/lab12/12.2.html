@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab12.2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = prompt("Zogsson tsag: ");
+      var niittulbur;
+      var tulbur = calculateCharges(a, niittulbur);
+      document.writeln("Tanii Tuluh tolbor: " + tulbur);
+      function calculateCharges(x, y) {
+        if (x != 0) y = 5000;
+        if (x > 3) {
+          for (var i = 0; i < x - 3; i++) {
+            y += 1000;
+            if (y == 23000) return y;
+          }
+        }
+        return y;
+      }
+    </script>
+  </body>
+</html>

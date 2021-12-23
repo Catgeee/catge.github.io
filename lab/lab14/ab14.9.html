@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+		var a =new Array("а","б","в","г","д","е","ё","ж","з","и","й","к","л","м",'н',"о","ө","п","р","с","т","у","ү","ф","х","ц","ч","ш","щ",	"ъ","ы","ь","э","ю","я");
+		var b =new Array(36);
+		for(i=0; i< b.length; i++)
+		{
+			b[i]=0;
+		}
+		var n =prompt("Текст оруулна уу");
+		k = n.split(" ");
+		for( i = 0; i < a.length; i++)
+		{
+			for(j = 0; j < k.length; j++)
+			{
+				if(k[j].split("")[0]==a[i])
+				{
+					b[i]=b[i]+1;
+				}
+			}
+			document.writeln(a[i] + "-үсгээр эхэлсэн үг = " + b[i] + " байна");
+			document.writeln("<br>");
+		}
+</script>
+</html>

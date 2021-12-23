@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      function insert() {
+        t = document.getElementById("item");
+        e = document.getElementById("price");
+        i = t.value;
+        k = parseInt(e.value);
+        item.value = "";
+        price.value = "";
+        var table = document.getElementsByTagName("table")[0];
+        var bruh = table.insertRow(1);
+        qwer = bruh.insertCell(0);
+        asdf = bruh.insertCell(1);
+        qwer.innerHTML = i;
+        asdf.innerHTML = k;
+        var ttl = 0;
+        ttl = ttl + k;
+        h = document.getElementById("total");
+        too = parseInt(h.innerHTML);
+        too = too + k;
+        h.innerHTML = too;
+      }
+    </script>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div>Item</div>
+    <input type="text" name="" id="item" />
+    <br />
+    <br />
+    <div>Price</div>
+    <input type="text" name="" id="price" />
+    <br />
+    <br />
+    <button onclick="insert()">insert</button><br />
+    <br />
+    <table border="1">
+      <tr>
+        <td><strong>Item</strong></td>
+        <td><strong>Price</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td id="total">0</td>
+      </tr>
+    </table>
+  </body>
+</html>

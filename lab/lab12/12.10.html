@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab12.10</title>
+  </head>
+  <body>
+    <script>
+      var x;
+      var y;
+      var z;
+      var a = prompt("a: ");
+      var b = prompt("b: ");
+      var c = prompt("c: ");
+      x = parseFloat(a);
+      y = parseFloat(b);
+      z = parseFloat(c);
+      document.writeln(minimum3(z, y, x));
+      function minimum3() {
+        if (Math.min(y, x) > z) return z;
+        if (Math.min(z, x) > y) return y;
+        if (Math.min(y, z) > x) return x;
+      }
+    </script>
+  </body>
+</html>

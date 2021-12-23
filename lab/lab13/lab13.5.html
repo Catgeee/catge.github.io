@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab11-5</title>
+  </head>
+  <body>
+    <form action="#">
+      <input id="bruh" type="text" />
+      <button id="insert">Dun oruulah</button>
+      <button id="finish">Duusgah</button>
+    </form>
+  </body>
+  <script type="text/javascript">
+    var a = [];
+    document.getElementById("insert").addEventListener("click", function () {
+      var input = document.getElementById("bruh");
+      a.push(parseInt(input.value));
+      input.value = "";
+    });
+    document.getElementById("finish").addEventListener("click", function () {
+      for (var i = 0; i < a.length; i++) {
+        var salary = Math.ceil((400000 + a[i] * 0.09) / 2800);
+        document.body.innerHTML += "$" + salary + "<br>";
+      }
+    });
+  </script>
+</html>

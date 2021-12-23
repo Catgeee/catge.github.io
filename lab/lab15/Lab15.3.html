@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      function create() {
+        table = document.getElementsByTagName("table")[0];
+        t = document.getElementById("row");
+        e = document.getElementById("column");
+        i = parseInt(t.value);
+        k = parseInt(e.value);
+        for (j = 1; j <= i; j++) {
+          tr = document.createElement("tr");
+          for (w = 1; w <= k; w++) {
+            var td = document.createElement("td");
+            var too = document.createTextNode(j + " " + "," + w);
+            td.appendChild(too);
+            tr.appendChild(td);
+          }
+          table.appendChild(tr);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" id="row" />
+    <input type="text" name="" id="column" /><br />
+    <button onclick="create()">insert</button><br />
+    <table border="1"></table>
+  </body>
+</html>

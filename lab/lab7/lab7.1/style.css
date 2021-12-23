@@ -1,0 +1,14 @@
+.out {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    margin: 20px 20px;
+}
+.in {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}

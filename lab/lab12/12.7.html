@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab12.7</title>
+  </head>
+  <body>
+    <script>
+      var n = prompt("too");
+      while (n != 0) {
+        i = isEven(n);
+        document.writeln(n + "" + i + "<br>");
+        n = prompt("too");
+      }
+      function isEven(n) {
+        if (n % 2 == 0) return true;
+        else return false;
+      }
+    </script>
+  </body>
+</html>

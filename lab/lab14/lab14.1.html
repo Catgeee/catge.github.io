@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="Today()">Today</button>
+	<button onclick="yesterday()">Yesterday</button>
+	<button onclick="Last()">10 years ago</button>
+	<button onclick="week()">Last week</button>
+</body>
+<script type="text/javascript">
+	function Today(){
+	var d = new Date();
+	alert(d);
+	}
+	function yesterday(){
+		const a =new Date("2021-12-16");
+		alert(a);
+	}
+	function Last(){
+		const t =new Date("2011-12-17");
+		alert(t);
+	}
+	function week(){
+		const n =new Date("2021-12-05");
+		alert(n);
+	}
+</script>
+</html>

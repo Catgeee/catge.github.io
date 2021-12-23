@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab11-9</title>
+  </head>
+  <body></body>
+  <script>
+    var too;
+    var n;
+    var valid = 0;
+
+    too = window.prompt("Тоо оруулна уу.");
+
+    n = parseInt(too);
+
+    for (var i = 1; i <= n; i++) {
+      for (var c = 2; c <= i / 2; c++) {
+        if (i % c == 0) {
+          valid++;
+        }
+      }
+      if (valid == 0) {
+        document.writeln("<p> Анхны тоо: " + i + "</p>");
+      }
+      valid = 0;
+    }
+  </script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.writeln("A.");
+      var f = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      document.writeln("<br>");
+      document.writeln(f[7]);
+      document.writeln("<br>");
+      document.write("B.");
+      var f = new Array(5);
+      document.writeln("<br>");
+      document.writeln();
+      for (var i = 0; i < f.length; i++) {
+        f[i] = 8;
+        document.writeln(f[i]);
+      }
+      document.writeln("<br>");
+      document.write("C.");
+      var f = new Array(100);
+      var k = 0;
+      document.writeln("<br>");
+      document.writeln();
+      for (var i = 0; i < f.length; i++) {
+        k = k + i;
+      }
+      document.writeln(k);
+      document.writeln("<br>");
+      document.write("D.");
+      var b = new Array(34);
+      var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+      document.writeln("<br>");
+      document.writeln();
+      for (var i = 0; i < b.length; i++) {
+        if (b[i] != a[i]) {
+          b[i] = a[i];
+          document.writeln(b[i]);
+        } else {
+          b[i] = 0;
+          document.writeln(b[i]);
+        }
+      }
+      document.writeln("<br>");
+      document.write("E.");
+      var b = new Array(99);
+      for (var i = 0; i < b.length; i++) {
+        b[i] = i + 1;
+      }
+      var max = b[0],
+        min = b[0];
+      document.writeln("<br>");
+      document.writeln();
+      for (var i = 1; i < b.length; i++) {
+        if (max < b[i]) max = b[i];
+        if (min > b[i]) min = b[i];
+      }
+      document.writeln("Хамгийн их: " + max + " Хамгийн бага: " + min);
+    </script>
+  </body>
+</html>

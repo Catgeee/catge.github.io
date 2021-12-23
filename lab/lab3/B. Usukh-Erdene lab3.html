@@ -1,0 +1,58 @@
+<html>
+<head>   
+    <title>Lab3</title>
+</head>
+    <table>
+        <tr>
+            <td colspan="2" width="250" bgcolor="orange">Sign Up</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue" style="color: white; text-align: right;">First Name</td>
+                
+                <td bgcolor="blue" width="150"><input type="text"></td>
+        </tr>
+        <tr>
+            <td bgcolor="blue" style="color: white; text-align: right;">Last Name</td>
+                <td bgcolor="blue" width="150"><input type="text"></td>
+        </tr>
+        <tr>
+            <td bgcolor="blue" style="color: white; text-align: right;">Password</td>
+                <td bgcolor="blue" width="150"><input type="password"></td>
+        </tr>
+        <tr>
+            <td bgcolor="blue" style="color: white; text-align: right;">Gender</td>
+                <td bgcolor="blue" style="color: white;" width="150">
+                    <input type="radio" id="Male" name="Gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="Gender" value="Female">
+                    <label for="Female">Female</label></td>
+        </tr>
+        <tr>
+            <td bgcolor="blue" style="color: white; text-align: right;">Country</td>
+                <td bgcolor="blue" width="150">
+                    <input list="Country">
+                    <datalist id="Country">
+                        <option value="USA"/>
+                        <option value="China"/>
+                        <option value="Mongolia"/>
+                        <option value="Japan"/>
+                        <option value="Korea"/>
+                    </datalist>
+                </td>
+        </tr>
+        <tr>
+            <td bgcolor="blue" style="color: white; text-align: right;">Comment</td>
+                <td bgcolor="blue" width="150" height="50"><textarea></textarea></td>   
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="red" style="color: white; text-align: center;">
+                <input type="radio">I agree to the Terms of Use</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="orange">
+                <input type="button" value="Submit">
+                <input type="button" value="Cancel">
+            </td> 
+        </tr>
+    </table>
+</html>

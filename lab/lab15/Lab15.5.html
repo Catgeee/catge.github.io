@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Town</th>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Sofia</td>
+      </tr>
+      <tr>
+        <td>Nick</td>
+        <td>Varna</td>
+      </tr>
+      <tr>
+        <td>Didi</td>
+        <td>Ruse</td>
+      </tr>
+      <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+      </tr>
+    </table>
+    <br />
+    <button onclick="colorize()">Colorize</button>
+
+    <script>
+      function colorize() {
+        let i = 0;
+        let teal = document.querySelectorAll("table tr");
+        for (let tr of teal) {
+          if (i % 2 != 0) {
+            tr.style.background = "red";
+          }
+          i++;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+.fade {
+  background-color: #ff5500;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 130px;
+  margin: 2px 4px;
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
+.fade:hover {
+  opacity: 1;
+}
+.color {
+  background-color: #ff5500;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 130px;
+  height: 50px;
+  margin: 2px 4px;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.color:hover {
+  color: black;
+}
+.grow {
+  background-color: #ff5500;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 130px;
+  height: 50px;
+  margin: 2px 4px;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.grow:hover {
+  width: 180px;
+  height: 80px;
+}
+.shrink {
+  background-color: #ff5500;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 130px;
+  height: 50px;
+  margin: 2px 4px;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.shrink:hover {
+  width: 90px;
+  height: 30px;
+  text-align: center;
+}
+.rotate {
+  background-color: #ff5500;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 130px;
+  height: 50px;
+  margin: 2px 4px;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.rotate:hover {
+  transform: rotate(-45deg);
+}
+.click {
+  width: 130px;
+  height: 50px;
+  display: inline-block;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  background: #e9e8e7;
+  background: linear-gradient(to left, white 50%, #ff5500 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.click:hover {
+  background-position: left;
+}

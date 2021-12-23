@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      b = [];
+      for (i = 0; i < 10; i++) {
+        temp = prompt("Husnegtiin " + i + "-r elementiig oruul");
+        flag = 0;
+        for (j = 0; j < b.lenght; j++) {
+          if (b[j] == temp) flag = 1;
+        }
+        if (flag == 0) {
+          document.writeln("<p>" + temp + "</p>");
+          b[b.lenght] = temp;
+        }
+      }
+    </script>
+  </body>
+</html>

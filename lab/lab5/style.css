@@ -1,0 +1,66 @@
+.table{
+	width: 40%;
+}
+.header{
+	background-image: url(Stars.png);
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #cccccc;
+	height: 250px;
+}
+#button{
+	background-color: #f00180;
+	color: white;
+	border: none;
+	height: 50px;
+	width: 150px;
+}
+#headertext{
+	color: white;
+}
+.text{
+	color: white;
+	padding: 10px;
+	font-size: 15pt;
+}
+.nav{
+	text-align: right;
+	padding-left: 30px;
+}
+#navtext{
+	margin: 20px;
+	font-size: 12pt;
+	font-weight: justify;
+	padding-left: 20px;
+}
+.ntext{
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	width: 320px;
+}
+.txt{
+	padding-top: 10px;
+	font-size: 12pt; 
+}
+.photo
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+#pht{
+	text-align: center;
+	padding-top: 20px;
+}
+.footer
+{
+	background-color: #444444;
+	color: #d84493;
+	height: 20px; 
+	text-align: right;
+	font-size: 12pt;
+	padding-top:10px; 
+	padding-bottom: 10px;
+	padding-right: 10px;
+}

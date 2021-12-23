@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab12.11</title>
+  </head>
+  <body>
+    <script>
+      var x = prompt("Dun: ");
+      var y = "";
+      document.writeln("Usgen dun: " + qualityPoints(x));
+      function qualityPoints(a, b) {
+        if (a >= 90) {
+          b = "A";
+          return b;
+        } else if (a >= 80) {
+          b = "B";
+          return b;
+        } else if (a >= 70) {
+          b = "C";
+          return b;
+        } else if (a >= 60) {
+          b = "D";
+          return b;
+        } else {
+          b = "F";
+          return b;
+        }
+      }
+    </script>
+  </body>
+</html>
